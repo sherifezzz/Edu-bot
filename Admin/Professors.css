@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #1e1e2f;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  margin-left: 260px;
+  padding: 20px;
+  width: calc(100% - 260px);
+  background: #f1f5f9;
+}
+
+.content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+
+
+.form-container button {
+  background: #0d3073;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  opacity: 0.8;
+}
+
+/* Style the checkbox container */
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox label */
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  user-select: none;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Create custom checkbox appearance */
+.checkbox-container label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkmark for the custom checkbox */
+.checkbox-container label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Change appearance when checkbox is checked */
+.checkbox-container input[type="checkbox"]:checked+label::before {
+  border-color: #000001;
+  background-color: #000000;
+}
+
+.checkbox-container input[type="checkbox"]:checked+label::after {
+  transform: translateY(-50%) scale(1);
+}
+
+/* Style for the select dropdown */
+#courses {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#courses:focus {
+  border-color: #0d3073;
+  box-shadow: 0 0 5px rgba(13, 48, 115, 0.5);
+}
+
+/* Style for the button */
+#add_professor {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(45deg, #0d3073, #0056a6);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#add_professor:hover {
+  background: linear-gradient(45deg, #0056a6, #0d3073);
+  transform: translateY(-2px);
+}
+
+#add_professor:active {
+  background: linear-gradient(45deg, #004080, #003060);
+  transform: translateY(0);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+table th {
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #e60000;
+}

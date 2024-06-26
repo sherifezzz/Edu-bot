@@ -1,0 +1,234 @@
+
+        /* أنماط CSS هنا */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        #navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #navbar ul li {
+            float: left;
+        }
+        
+        #navbar ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        #main-content {
+            padding: 20px;
+        }
+        
+        #chatbot {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+        
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .main-content {
+            margin-left: 20px;
+        }
+        
+        .chat-area {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px; 
+            height: 400px; 
+        }
+        
+        .chat-area p {
+            font-size: 16px;
+        }
+        
+        .chat-messages {
+            max-height: 300px;
+            padding-right: 10px;
+        }
+        
+        .chat-input {
+            margin-top: 20px;
+        }
+        
+        .chat-input input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 100px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .chat-input button {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        
+        .chat-input button:hover {
+            background-color: #0056b3;
+        }
+        
+        #darkModeBtn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        #darkModeBtn:hover {
+            background-color: #555;
+        }
+        
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #111; /* Dark background color */
+            color: #ddd; /* Light text color */
+        }
+        
+        .dark-mode .sidebar {
+            background-color: #222; /* Darker sidebar background color */
+            border-right: 2px solid #444; /* Darker border color */
+        }
+        
+        .dark-mode .sidebar ul li a {
+            color: #ddd; /* Light link color */
+        }
+        
+        .dark-mode .sidebar ul li a:hover {
+            background-color: #444; /* Darker hover background color */
+        }
+        
+        .dark-mode .main-content {
+            background-color: #222; /* Dark main content background color */
+        }
+        
+        .dark-mode .chat-area {
+            background-color: #222; /* Dark chat area background color */
+            border: 1px solid #444; /* Darker border color */
+        }
+        
+        .dark-mode .chat-input input {
+            background-color: #333; /* Dark input background color */
+            color: #ddd; /* Light input text color */
+        }
+        
+        .dark-mode .chat-input button {
+            background-color: #3498db; /* Dark button background color */
+            color: #fff; /* Light button text color */
+        }
+        
+        .dark-mode .chat-input button:hover {
+            background-color: #2980b9; /* Darker button hover background color */
+        }
+        
+        .dark-mode .message {
+            background-color: #333; /* Dark message background color */
+            color: #ddd; /* Light message text color */
+        }

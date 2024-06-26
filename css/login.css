@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('brick-wall-background_931878-83110.avif'); /* Replace 'your-image-url' with the URL of your image */
+  background-repeat: no-repeat;
+  background-size: cover; /* This will make the image cover the entire body */
+}
+
+  
+  .header {
+    text-align: center;
+    padding: 40px;
+    background-color: transparent; /* This line makes the header background transparent */
+    color: rgb(6, 6, 6);
+  }
+  
+  
+  form {
+    width: 300px; /* Adjusted form width to match the image */
+    margin: 60px auto; /* Added top and bottom margin to center the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input, .input-group select, .input-group input[type=radio] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%; /* Adjusted button width to match the image */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

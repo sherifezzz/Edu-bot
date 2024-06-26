@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 100%;
+    background: #11101d;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin-right: 20px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.profile-menu {
+    position: relative;
+}
+
+.profile-menu img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.profile-menu-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.profile-menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-menu:hover .profile-menu-content {
+    display: block;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 800px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0d3073;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.timeline h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.timeline-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.timeline button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    background-color: #fff;
+    color: #f2709c;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.timeline button:hover {
+    background-color: #f2709c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.timeline input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.timeline input[type="text"]:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.timeline #activityList {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.timeline #activityList:hover {
+    background: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.calendar {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.calendar h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0d3073;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    /* Reduced padding for better spacing */
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+th {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 14px;
+    /* Reduced font size */
+    cursor: pointer;
+    position: relative;
+}
+
+td:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+td.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+}
+
+td.empty {
+    background-color: #f4f4f4;
+    cursor: default;
+}
+
+td::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+td span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.calendar {
+    text-align: center; /* Center align content in the calendar */
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between; /* Distribute items to both ends of the container */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+.calendar button {
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    display: block;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.calendar button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.task {
+    display: block;
+    background: linear-gradient(to right, #ff9472, #f2709c);
+    padding: 4px 8px;
+    margin: 2px 0;
+    /* Reduced margin for smaller spacing */
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.task:hover {
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    .container,
+    .calendar {
+        width: calc(100% - 20px);
+    }
+
+    .timeline-controls {
+        flex-direction: column;
+    }
+
+    .timeline button,
+    .calendar button {
+        width: 100%;
+    }
+
+    .timeline input[type="text"],
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+

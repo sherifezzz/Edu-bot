@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f4f7fc;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background: #1e1e2f;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 40px;
+    width: calc(100% - 260px);
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+}
+
+.overview-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric {
+    flex: 1;
+    min-width: 200px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.metric:hover {
+    transform: translateY(-10px);
+}
+
+.metric i {
+    font-size: 30px;
+    color: #fff;
+    background: #007bff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.metric1 i {
+    background: #4e73df;
+}
+
+.metric2 i {
+    background: #f6c23e;
+}
+
+.metric3 i {
+    background: #1cc88a;
+}
+
+.metric4 i {
+    background: #e74a3b;
+}
+
+.metric5 i {
+    background: #8a4ef7;
+}
+
+.metric .count {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.metric .label {
+    font-size: 14px;
+    color: #666;
+}
+
+.course-management-section,
+.task-management-section {
+    margin-top: 40px;
+}
+
+.course-management-section h2,
+.task-management-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}

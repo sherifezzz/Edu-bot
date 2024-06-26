@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background: #1e1e2f;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    background: #f1f5f9;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.custom-search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-search-container input {
+    padding: 10px;
+    width: 300px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.custom-search-container button {
+    padding: 10px 20px;
+    background: #0d3073;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-search-container button:hover {
+    background: #09245a;
+}
+
+
+.chart-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.chart-container div {
+    flex: 1;
+    min-width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+table th {
+    background: #f2f2f2;
+    font-weight: 600;
+}
+
+table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table input[type='text'] {
+    padding: 8px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 20px);
+}
+
+table input[type='text']:focus {
+    border-color: #0d3073;
+}
+
+
+.delete-btn {
+    padding: 6px 12px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+}
+
+.update-btn {
+    padding: 6px 12px;
+    background: #0d3073; /* Match the background color of the delete button */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.update-btn:hover {
+    background: #09245a; /* Match the hover background color of the delete button */
+}

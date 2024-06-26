@@ -1,0 +1,64 @@
+body {
+  width: 50%;
+  margin: 100px auto;
+  background-color: lightgray;
+  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+select,
+textarea,
+input[type="date"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+input[type="submit"] {
+  background-color: #2ECC71;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #27e879;
+}
+
+#task-form {
+  margin-top: 20px;
+}
+
+/* Adjustments for specific elements */
+#level-select,
+#course-select {
+  width: calc(100% - 22px); /* Adjust width to accommodate labels */
+}
+
+textarea {
+  height: 100px; /* Adjust height for better readability */
+}
